@@ -1,0 +1,22 @@
+{
+  "name": "er-rush-multiplayer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ER RUSH cooperative multiplayer triage game for Netlify",
+  "scripts": {
+    "build": "netlify build",
+    "dev": "netlify dev",
+    "typecheck": "tsc --noEmit",
+    "check:frontend": "node scripts/check-frontend.mjs",
+    "test": "npm run check:frontend && npm run typecheck"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0",
+    "@netlify/functions": "^3.0.0"
+  },
+  "devDependencies": {
+    "@netlify/cli": "^23.0.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
